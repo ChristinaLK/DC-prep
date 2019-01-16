@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "\ndata_source <- paste(getwd(), \"..\", \"DataCarpentry/Clean/combined.csv\", sep = \"/\")\nsurveys <- read.csv(data_source)\n\nclass(surveys)\nstr(surveys)\n\n# show diagram\n# Give list of things to explore\n\nsurveys[1]\nsurveys[1,1]\nsurveys['species_id']\n\nplot_type <- surveys$plot_type\nclass(sex)\nlevels(plot_type)\nplot_type\n\nsex\nsex_categories <- levels(sex)\nlevels(sex)\nsex_categories <- c(\"undetermined\", \"female\", \"male\")\nlevels(sex) <- sex_categories\n\nas.character(sex)\n\n",
+    "created" : 1547680087296.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4220652662",
+    "id" : "99ECF166",
+    "lastKnownWriteTime" : 1547680779,
+    "last_content_update" : 1547680779318,
+    "path" : "~/Desktop/DC/Scripts/dataframes.R",
+    "project_path" : "Scripts/dataframes.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
