@@ -8,9 +8,15 @@ getwd()
 
 ## 9:20 - 9:50
 
+## objectives
+# * describe how values get assigned to objects
+# * read the help for a new function and use it to perform a task
+
 # saving values to "objects"
 weight_kg <- 55
 weight_kg # this prints
+
+# alt- for PC, option- for mac
 
 weight_kg * 2.2 # why not appear on top right
 weight_lb <- weight_kg * 2.2

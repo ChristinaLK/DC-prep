@@ -6,8 +6,9 @@ paste()
 # 1. What does paste() do?
 # 2. What could you use it for?  Can you create an example for this use case?
 # 3. How would you "paste" together words so that there are no spaces in the output? 
-# Specifically, how could you create a string of letters with the project directory 
-# getwd() and the folder with your clean data?  
+# Specifically, how could you use paste() to create a string like this:
+# "/Users/alice/Desktop/DataCarpentry/data/data_clean.csv"
+# if you use getwd() for part of the sequence of folders?  
 
 ### dataframes
 
