@@ -34,6 +34,7 @@ surveys %>% filter(year == 1995)
 # talk about different conditions
 # these are our SELECT and WHERE from yesterday!  :D
 # how do we combine them?  Three options: 
+# draw on board
 
 survey_subset <- filter(surveys, year == 1995)
 select(survey_subset, plot_id, species_id, weight)
@@ -123,3 +124,20 @@ cats_and_dogs <- data.frame(status = c('undergrad','grad','postdoc','faculty','s
 
 cats_and_dogs_long <- cats_and_dogs %>% gather(animals, n, -status)
 cats_and_dogs_long %>% spread(animals, n)
+
+surveys_complete <- surveys %>%
+  filter(!is.na(weight),           # remove missing weight
+         !is.na(hindfoot_length),  # remove missing hindfoot_length
+         !is.na(sex))    
+
+## Extract the most common species_id
+species_counts <- surveys_complete %>%
+  count(species_id) %>% 
+  filter(n >= 50)
+
+## Only keep the most common species
+surveys_complete <- surveys_complete %>%
+  filter(species_id %in% species_counts$species_id)
+
+write_csv(surveys_complete, path = "data_output/surveys_complete.csv")
+

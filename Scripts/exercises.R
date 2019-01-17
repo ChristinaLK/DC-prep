@@ -10,6 +10,12 @@ paste()
 # "/Users/alice/Desktop/DataCarpentry/data/data_clean.csv"
 # if you use getwd() for part of the sequence of folders?  
 
+# vectors
+num_char <- c(1, 2, 3, "a")
+num_logical <- c(1, 2, 3, TRUE)
+char_logical <- c("a", "b", "c", TRUE)
+tricky <- c(1, 2, 3, "4")
+
 ### dataframes
 
 dim(surveys)
@@ -37,9 +43,6 @@ summary(surveys)
 # less than 30.
 # Hint: think about how the commands should be ordered to produce this data frame!
 
-# Required: the mean weight of each genus in each plot over 
-# the entire survey period.
-
 # 1. How many animals were caught in each plot_type surveyed?
 # 2. Use group_by() and summarize() to find the mean, min, and 
 #    max hindfoot length for each species (using species_id). Also 
@@ -48,7 +51,6 @@ summary(surveys)
 #    columns year, genus, species_id, and weight.
 
 ##### tidyr
-
 
 cats_and_dogs <- data.frame(status = c('undergrad','grad','postdoc','faculty','staff/other'),
                             dog = c(5,2,1,6,7),
