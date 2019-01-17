@@ -1,0 +1,34 @@
+## 9:00 - 9:20
+
+Clear R!! Make sure you have the data downloaded!! 
+
+# intro talk
+
+### intro obejctives
+* compare tradeoffs of R vs openrefine vs sql
+* name what each pane does and why/how its useful
+* execute r code from script
+
+First half of the morning, nuts and bolts, how to work within Rstudio, 
+How R thinks about data.  Second half, using tools to write code that 
+does some analysis and manipulation.  May be slow for some, want to have 
+a good foundation.  
+
+Open R, have people create a project (explain that we'll discuss in a min)
+
+Orientation of Rstudio.  Primary purpose is to be a place ot write and run 
+R code; also has extra features, shortcuts.  Project as a way to set wd.
+
+This is our workbench, need to understand what each piece does.
+Console (use seq(), getwd())
+Want to save our commands in a more permanent way, so going to put them in script
+Open script, save it, paste commands, show how to evaluate them, talk about comments. 
+Top right -- a record, history and environment
+Bottom right, other info (files, help, plots)
+Workflow today is going to be adding text in the script, executing it.  Bear with 
+the screen management side of things.  
+
+Rsudio as workbench, projects are organizing feature. 
+Writing R code as script so we have a record
+- comments
+- clear code

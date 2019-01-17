@@ -1,0 +1,7 @@
+TO DO
+
+re-print notes
+upload slides
+download data 
+update rstudio
+add exercises to my Code folder
